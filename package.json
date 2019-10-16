@@ -22,46 +22,6 @@
   "bugs": {
     "url": "https://gitlab.com/imooc/vuejs/issues"
   },
-  "eslintConfig": {
-    "root": true,
-    "parserOptions": {
-      "ecmaVersion": 2017
-    },
-    "extends": [
-      "mysticatea",
-      "mysticatea/modules",
-      "plugin:vue/recommended"
-    ],
-    "plugins": [
-      "node"
-    ],
-    "env": {
-      "browser": false
-    },
-    "globals": {
-      "applicationCache": false,
-      "atob": false,
-      "btoa": false,
-      "console": false,
-      "document": false,
-      "location": false,
-      "window": false
-    },
-    "rules": {
-      "node/no-extraneous-import": "error",
-      "node/no-missing-import": "error",
-      "node/no-unpublished-import": "error",
-      "vue/html-indent": [
-        "error",
-        4
-      ],
-      "vue/max-attributes-per-line": "off"
-    }
-  },
-  "eslintIgnore": [
-    "node_modules",
-    "webpack.config.js"
-  ],
   "homepage": "https://gitlab.com/imooc/vuejs#README",
   "dependencies": {
     "clean-webpack-plugin": "^0.1.17",
@@ -84,9 +44,12 @@
     "write-file-webpack-plugin": "^4.2.0"
   },
   "devDependencies": {
-    "eslint": "^4.13.0",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^4.19.1",
     "eslint-config-mysticatea": "^12.0.0",
-    "eslint-plugin-vue": "^4.0.0-beta.2",
-    "vue-eslint-parser": "^2.0.1-beta.2"
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-html": "^6.0.0",
+    "eslint-plugin-vue": "^4.7.1",
+    "vue-eslint-parser": "^2.0.3"
   }
 }

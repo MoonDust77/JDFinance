@@ -1,11 +1,15 @@
 <template lang="html">
-  <div :class="$style.home">
-    <h1>Home</h1>
+  <div>
+    <Header />
+    <slider />
   </div>
 </template>
 
 <script>
+import Header from '../public/header'
+import slider from './hSlider'
 export default {
+  components: { Header, slider },
   data() {
     return {}
   },
